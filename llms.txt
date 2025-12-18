@@ -1,0 +1,23 @@
+# Family Cookbook - LLM Documentation
+
+This project is a reactive family cookbook application built with Next.js, Convex, and Gemini AI.
+
+## Architecture
+- **Frontend**: Next.js 15 (App Router), Tailwind CSS, Shadcn/UI.
+- **Backend**: Convex (Reactive Database & Serverless Functions).
+- **AI**: Gemini 2.0 Flash used for recipe extraction from URLs and images.
+- **Auth**: @convex-dev/auth (Password-based).
+
+## Key Files
+- `convex/schema.ts`: Database schema for cookbooks, recipes, and shares.
+- `convex/recipes.ts`: Contains AI "agents" for data extraction.
+- `convex/cookbooks.ts`: Logic for cookbook management and copying.
+- `app/(app)/cookbooks/[id]/add-recipe/page.tsx`: Frontend entry for AI extraction.
+
+## External Documentation
+- Convex: https://www.convex.dev/llms.txt
+- Vercel: https://vercel.com/llms.txt
+- Shadcn: Follows standard Radix/Tailwind patterns.
+
+## API Keys
+- Requires `GEMINI_API_KEY` in Convex environment variables.

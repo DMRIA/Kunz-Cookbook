@@ -1,0 +1,9 @@
+{
+  "mcpServers": {
+    "shadcn": {
+      "command": "npx",
+      "args": ["@shadcn/mcp"],
+      "description": "MCP server for managing Shadcn UI components"
+    }
+  }
+}
